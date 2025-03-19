@@ -23,18 +23,6 @@
     transition: color var(--anim-time) ease, background-color var(--anim-time) ease;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    min-height: 100vh;
-    background-image: radial-gradient(circle at top right, rgba(108, 92, 231, 0.1), transparent 70%),
-        radial-gradient(circle at bottom left, rgba(0, 210, 255, 0.1), transparent 70%);
-    background-attachment: fixed;
-    background-color: var(--bg);
-    color: var(--text);
-    transition: background-color var(--anim-time) ease, color var(--anim-time) ease;
-}
-
 .light-mode {
     --bg: var(--light-bg);
     --text: var(--light-text);
@@ -54,8 +42,15 @@ body {
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    background-image: radial-gradient(circle at top right, rgba(108, 92, 231, 0.1), transparent 70%),
+        radial-gradient(circle at bottom left, rgba(0, 210, 255, 0.1), transparent 70%);
+    background-attachment: fixed;
     background-color: var(--bg);
     color: var(--text);
+    transition: background-color var(--anim-time) ease, color var(--anim-time) ease;
 }
 
 header {
@@ -227,9 +222,12 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin: 2rem auto; /* Changed from 'margin: 2rem 0' to center horizontally */
-    max-width: 1200px; /* Matches .container width for alignment */
-    padding: 0 2rem; /* Matches .container padding for consistency */
+    margin: 2rem auto;
+    /* Changed from 'margin: 2rem 0' to center horizontally */
+    max-width: 1200px;
+    /* Matches .container width for alignment */
+    padding: 0 2rem;
+    /* Matches .container padding for consistency */
 }
 
 .pagination-btn {
@@ -242,8 +240,10 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     transition: opacity 0.2s ease;
-    width: 120px; /* Fixed width to ensure both buttons are the same size */
-    text-align: center; /* Ensures text is centered within the button */
+    width: 120px;
+    /* Fixed width to ensure both buttons are the same size */
+    text-align: center;
+    /* Ensures text is centered within the button */
 }
 
 .pagination-btn:hover {
@@ -260,8 +260,10 @@ header {
     font-size: 1rem;
     font-weight: 500;
     color: var(--text);
-    min-width: 100px; /* Optional: ensures consistent spacing between buttons */
-    text-align: center; /* Centers the page info text */
+    min-width: 100px;
+    /* Optional: ensures consistent spacing between buttons */
+    text-align: center;
+    /* Centers the page info text */
 }
 
 footer {
