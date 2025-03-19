@@ -87,10 +87,6 @@ themeToggle.addEventListener('click', () => {
         html.classList.remove('light-mode');
         html.classList.add('dark-mode');
     }
-    // Force repaint
-    html.style.display = 'none';
-    html.offsetHeight; // Trigger reflow
-    html.style.display = '';
 });
 
 // Copy to clipboard functionality
