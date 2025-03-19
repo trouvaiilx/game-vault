@@ -1,0 +1,301 @@
+:root {
+    --light-bg: #f8f9fa;
+    --light-text: #212529;
+    --light-card: #ffffff;
+    --light-shadow: rgba(0, 0, 0, 0.1);
+    --light-accent: #6c5ce7;
+    --light-hover-bg: rgba(255, 255, 255, 0.9);
+
+    --dark-bg: #121212;
+    --dark-text: #e0e0e0;
+    --dark-card: #1e1e1e;
+    --dark-shadow: rgba(0, 0, 0, 0.3);
+    --dark-accent: #00d2ff;
+    --dark-hover-bg: rgba(30, 30, 30, 0.9);
+
+    --anim-time: 0.5s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: color var(--anim-time) ease, background-color var(--anim-time) ease;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    background-image: radial-gradient(circle at top right, rgba(108, 92, 231, 0.1), transparent 70%),
+        radial-gradient(circle at bottom left, rgba(0, 210, 255, 0.1), transparent 70%);
+    background-attachment: fixed;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color var(--anim-time) ease, color var(--anim-time) ease;
+}
+
+.light-mode {
+    --bg: var(--light-bg);
+    --text: var(--light-text);
+    --card: var(--light-card);
+    --shadow: var(--light-shadow);
+    --accent: var(--light-accent);
+    --hover-bg: var(--light-hover-bg);
+}
+
+.dark-mode {
+    --bg: var(--dark-bg);
+    --text: var(--dark-text);
+    --card: var(--dark-card);
+    --shadow: var(--dark-shadow);
+    --accent: var(--dark-accent);
+    --hover-bg: var(--dark-hover-bg);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--card);
+    box-shadow: 0 4px 12px var(--shadow);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--accent);
+}
+
+.theme-toggle {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: var(--card);
+    border: 2px solid var(--accent);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.toggle-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    transition: transform var(--anim-time) ease;
+}
+
+.light-mode .toggle-thumb {
+    transform: translateX(0);
+}
+
+.dark-mode .toggle-thumb {
+    transform: translateX(30px);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.game-card {
+    position: relative;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+}
+
+.game-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity var(--anim-time) ease-in-out;
+}
+
+.game-card:hover .game-cover {
+    opacity: 0.1;
+}
+
+.game-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--hover-bg);
+    opacity: 0;
+    transition: opacity var(--anim-time) ease-in-out;
+}
+
+.game-card:hover .game-info {
+    opacity: 1;
+}
+
+.game-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.credentials {
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 250px;
+}
+
+.credential-item {
+    position: relative;
+    margin-bottom: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 0.75rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.credential-label {
+    display: block;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.copy-btn:hover {
+    opacity: 1;
+}
+
+.credential-value {
+    word-break: break-all;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem auto; /* Changed from 'margin: 2rem 0' to center horizontally */
+    max-width: 1200px; /* Matches .container width for alignment */
+    padding: 0 2rem; /* Matches .container padding for consistency */
+}
+
+.pagination-btn {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+    width: 120px; /* Fixed width to ensure both buttons are the same size */
+    text-align: center; /* Ensures text is centered within the button */
+}
+
+.pagination-btn:hover {
+    opacity: 0.9;
+}
+
+.pagination-btn:disabled {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+#pageInfo {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text);
+    min-width: 100px; /* Optional: ensures consistent spacing between buttons */
+    text-align: center; /* Centers the page info text */
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: var(--card);
+    box-shadow: 0 -4px 12px var(--shadow);
+}
+
+@media screen and (max-width: 768px) {
+    .games-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .game-card {
+        height: 300px;
+    }
+
+    .game-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+}
