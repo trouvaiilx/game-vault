@@ -1,1 +1,1 @@
-# [Game Vault Site](https://trouvaiilx.giithub.io/game-vault)
+# [Game Vault Site](https://trouvaiilx.giithub.io/game-vault/)
