@@ -13,6 +13,33 @@ const games = [
     { title: "Mafia Trilogy", image: "images/mafiatrilogy.jpg", username: "naomip1961", password: "ID7RRttp9YROUme3WvDe" },
     { title: "Bright Memory Infinite", image: "images/brightmemoryinfinite.jpg", username: "BrightMemoryInfinite", password: "Bright45%&$6&5Memory" },
 
+    { title: "Black Myth: Wukong", image: "images/wukong.jpg", username: "riptide_family01", password: "RiptideGameShop01" },
+    { title: "Days Gone", image: "images/daysgone.jpg", username: "juscelinolira", password: "CDTBTD66XEX6" },
+    { title: "Nier: Automata", image: "images/nierautomata.jpg", username: "iftodipasha89", password: "3dm!ArsEq3" },
+    { title: "Baldur's Gate 3", image: "images/baldur.jpg", username: "jondunn1z", password: "3QHKTg95UZ1984" },
+    { title: "Red Dead Redemption 2", image: "images/rdr2.jpg", username: "reddead2347", password: "Reddead3$76" },
+    { title: "Shin Megami Tensei V: Vengeance", image: "images/shin5.jpg", username: "bumerpedust1970", password: "rvjD3ktpLL1983" },
+    { title: "Like a Dragon: Infinite Wealth", image: "images/likeadragoniw.jpg", username: "dawnpater3d", password: "enNp5N@jIwMDI" },
+    { title: "Yakuza Kiwami Series", image: "images/yakuzakiwami.jpg", username: "pandagame4588", password: "pandagame9463" },
+    { title: "Like a Dragon: Pirate Yakuza in Hawaii", image: "images/likeadragonpyih.jpg", username: "Candrinannr81", password: "clSKS0KE8Zq7vy2" },
+    { title: "Like a Dragon Gaiden: The Man Who Erased His Name", image: "images/likeadragongaiden.jpg", username: "nightmarishself", password: "qRl51vwpP451" },
+    { title: "Elden Ring", image: "images/eldenring.jpg", username: "anhnta2609", password: "retii1337+" },
+
+    { title: "Hitman World of Assassination", image: "images/hitmanwoa.jpg", username: "timurtaradaiko", password: "3fRK47CDwYaY" },
+    { title: "Ready or Not", image: "images/readyornot.jpg", username: "ReadyorNottt", password: "ReadyorNo6%6" },
+    { title: "Marvel's Spider-Man Remastered", image: "images/spidermanremastered.jpg", username: "SOHAM123419", password: "Funpay-0nibist" },
+    { title: "Marvel's Spider-Man: Miles Morales", image: "images/spidermanmilesmorales.jpg", username: "qtixe43976", password: "ezlbgwezA6661eE!1" },
+    { title: "Sekiro: Shadows Die Twice", image: "images/sekiro.jpg", username: "f2ile50nze", password: "sekiro$678" },
+    { title: "Omori", image: "images/omori.jpg", username: "HeeHeelios", password: "D49S4B76YSC5" },
+    { title: "Devil May Cry 5", image: "images/dmc5.jpg", username: "tyraanderson88", password: "h9veaqfk" },
+    { title: "Love is All Around", image: "images/loveisallaround.jpg", username: "laurabrown7c", password: "g79cQhPpFX1991" },
+    { title: "Five Hearts Under One Roof", image: "images/fiveheartsunderoneroof.jpg", username: "dangates5d", password: "cY0wd6V8Ka1986" },
+    { title: "Knowledge, or know Lady", image: "images/knowledgelady.jpg", username: "raucontdepnie1985", password: "5yqlECyGk41980" },
+    { title: "Grand Theft Auto: San Andreas", image: "images/gtasa.jpg", username: "coolmaxxx", password: "TECD7AYMCKMX" },
+    { title: "Grand Theft Auto: IV", image: "images/gta4.jpg", username: "rzm745", password: "Rzm85770923" },		
+    { title: "Grand Theft Auto: The Trilogy", image: "images/gtatrilogy.jpg", username: "kimbarker2v", password: "MEFvaGYjw5TQ" },
+    		
+
 ];
 
 // Pagination settings
