@@ -37,8 +37,8 @@ const games = [
     { title: "Knowledge, or know Lady", image: "images/knowledgelady.jpg", username: "raucontdepnie1985", password: "5yqlECyGk41980" },
     { title: "Grand Theft Auto: San Andreas", image: "images/gtasa.jpg", username: "coolmaxxx", password: "TECD7AYMCKMX" },
     { title: "Grand Theft Auto: IV", image: "images/gta4.jpg", username: "rzm745", password: "Rzm85770923" },		
-    { title: "Grand Theft Auto: The Trilogy", image: "images/gtatrilogy.jpg", username: "kimbarker2v", password: "MEFvaGYjw5TQ" },
-    		
+    { title: "Shin Megami Tensei III: Nocturne HD Remaster", image: "images/shin3.jpg", username: "ShinMegamiTenseii", password: "ShinMegamiTens9$6" },
+
 
 ];
 
