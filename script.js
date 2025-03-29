@@ -39,6 +39,7 @@ const games = [
     { title: "Grand Theft Auto: IV", image: "images/gta4.jpg", username: "rzm745", password: "Rzm85770923" },		
     { title: "Shin Megami Tensei III: Nocturne HD Remaster", image: "images/shin3.jpg", username: "ShinMegamiTenseii", password: "ShinMegamiTens9$6" },
 
+    { title: "Inzoi", image: "images/inzoi.jpg", username: "benjamindiez34", password: "lalokytapi459" },
 
 ];
 
